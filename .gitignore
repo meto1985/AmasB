@@ -1,0 +1,37 @@
+/*
+1000 - A + B Problema
+Descripción
+
+Para este problema, debe calcular A + B , números dados en la entrada.
+Especificación de entrada
+
+La única línea de entrada contiene dos enteros separados por espacios A, B (0 <= A, B <= 10) .
+Características de salida
+
+La única línea de salida debe contener un entero: la suma de A y B .
+Entrada de la muestra
+
+1 2
+Ejemplo de salida
+
+3
+ */
+package AmasB;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author mou
+ */
+public class AmasB {
+
+    public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
+        String cad = leer.nextLine();
+        String temporal[] = cad.split(" ");
+        int A = Integer.parseInt(temporal[0]);
+        int B = Integer.parseInt(temporal[1]);
+        System.out.println(A + B);
+    }
+}
